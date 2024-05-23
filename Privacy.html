@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="translate.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .terms-section {
+            color: rgb(111 19 19);
+            font-family: 'Segoe UI';
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+            text-align: justify;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 20px;
+            column-count: 1;
+            column-gap: 40px;
+        }
+
+        .terms-section p {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 500px) {
+            .terms-section {
+                font-size: 10px;
+                line-height: 1.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader"><i class="fas fa-spinner fa-spin"></i></div>
+    <div>
+        <div id="nav-placeholder"></div>
+    </div>
+    <section class="terms-section">
+        <h2>Privacy Policy</h2>
+        <p>We use your data to provide and improve Service. By using Service, you agree to the collection and use of
+            information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms
+            used in this Privacy Policy have the same meanings as in our Terms and Conditions.
+
+            Our Terms and Conditions (“Terms”) govern all use of our Service and together with the Privacy Policy
+            constitute your agreement with us (“Agreement”).
+        </p>
+        <h3>Types of Data Collected</h3>
+        <p1>TPersonal Data :-While using our Service, we may ask you to provide us with certain personally
+            identifiable information that can be used to contact or identify you. Personally, identifiable
+            information may include:
+
+            Email address
+            Your name
+            Phone number
+            City and State
+            Cookies and Usage Data
+            Location Data :-We may use and store information about your location if you permit us to do so. We use
+            this data to provide features of our Service, to improve and customize our Service.
+
+            You can enable or disable location services when you use our Service at any time by way of your device
+            settings.
+
+            Tracking Cookies Data :-
+            We use cookies and similar tracking technologies to track the activity on our Service and we hold
+            certain information.
+
+            Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies
+            are sent to your browser from a website and stored on your device. Other tracking technologies are also
+            used such as beacons, tags and scripts to collect and track information and to improve and analyze our
+            Service.
+
+            You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However,
+            if you do not accept cookies, you may not be able to use some portions of our Service.</p1>
+        <h4>Examples of Cookies we use:</h4>
+        <p2>Session Cookies: We use Session Cookies to operate our Service.
+
+            Preference Cookies: We use Preference Cookies to remember your preferences and various settings.
+
+            Security Cookies: We use Security Cookies for security purposes.
+
+            Advertising Cookies: Advertising Cookies are used to serve you with advertisements that may be relevant
+            to you and your interests.</p2>
+        <h4>Use of Data</h4>
+        <p3>Mantra Sankalp uses the collected data for various purposes:
+            To provide and maintain our Service;
+            To notify you about changes to our Service;
+            To allow you to participate in interactive features of our Service when you choose to do so;
+            To provide customer support;
+            To gather analysis or valuable information so that we can improve our Service;
+            To detect, prevent and address technical issues;
+            To fulfil any other purpose for which you provide it;
+            To carry out our obligations and enforce our rights arising from any contracts entered into between you
+            and us, including for billing and collection;
+            To provide you with notices about your account and/or renewal notices, email instructions, etc.;</p3>
+        <h4>Transfer of Data :-</h4>
+        <p4> Your information, including Personal Data, may be transferred to – and maintained on – computers
+            located outside of your state, province, country or other governmental jurisdiction where the data
+            protection laws may differ from those of your jurisdiction.
+
+            If you are located outside India and choose to provide information to us, please note that we transfer
+            the data, including Personal Data, to India and process it there.
+
+            Your consent to this Privacy Policy followed by your submission of such information represents your
+            agreement to that transfer.
+
+            Mantra Sankalp will take all the steps reasonably necessary to ensure that your data is treated securely
+            and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an
+            organization or a country unless there are adequate controls in place including the security of your
+            data and other personal information.</p4>
+        Changes to This Privacy Policy :-
+        We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
+        Privacy Policy on this page.
+
+        We will let you know via email and/or a prominent notice on our Service, prior to the change becoming
+        effective and update “effective date” at the top of this Privacy Policy.
+
+        You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy
+        are effective when they are posted on this page.
+        <h4>Contact Us:-</h4>
+        <p>If you have any questions about this Privacy Policy, please contact us by email:
+            reachmantrasankalp@gmail.com</p>
+    </section>
+    <div id="footer-placeholder"></div>
+    </div>
+
+    <script>
+        function loadHTML(file, elementId) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.log('Error loading HTML:', error));
+        }
+
+        loadHTML('common/nav.html', 'nav-placeholder');
+        loadHTML('common/footer.html', 'footer-placeholder');
+    </script>
+
+</body>
+
+</html>

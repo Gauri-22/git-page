@@ -1,0 +1,1072 @@
+body {
+  font-family: "Inter";
+  margin: 0px;
+  padding: 0px;
+  top: 0px !important;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+/* Modal styles */
+#language-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: rgb(166 117 93);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  color: #fff;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(161 70 70);
+  cursor: pointer;
+  color: #fff;
+}
+
+.skiptranslate,
+#goog-gt-tt {
+  display: none !important;
+}
+
+.language-button {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #ff6f00;
+  padding: 5px 10px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+}
+
+.ribbon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 5vh;
+  background-color: #ff6f00;
+  color: #fff;
+  font-size: 18px;
+}
+
+#navbar {
+  background-color: rgb(98 6 6);
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3em;
+  height: 17vh;
+}
+
+.logo {
+  display: flex;
+  align-items: left;
+}
+
+.logo img {
+  width: auto;
+  height: 15vh;
+}
+
+.book-pooja-button {
+  background: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  height: fit-content;
+  padding: 0.8em 1.5em;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5),
+    -2px 2px 2px rgba(255, 255, 255, 0.5), 2px -2px 2px rgba(255, 255, 255, 0.5),
+    -2px -2px 2px rgba(255, 255, 255, 0.5);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.book-pooja-button:hover {
+  background: rgb(239 236 236);
+}
+
+.book-pooja-button a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-size: medium;
+  color: #000;
+}
+
+.banner {
+  background-image: url("/images/banner_img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner-text-container {
+  transform: translate(3em, 3em);
+}
+
+.banner-text {
+  z-index: 1;
+  color: #f9a100;
+  font-size: 50px;
+  font-family: math;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgb(0 0 0 / 80%);
+  filter: brightness(150%);
+  margin: 0;
+}
+
+.banner-text-sub {
+  z-index: 1;
+  color: #f9a100;
+  font-size: 13px;
+  font-family: math;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgb(0 0 0 / 80%);
+  filter: brightness(150%);
+}
+
+.fixed-icons {
+  max-width: 100%;
+  position: fixed;
+  z-index: 994449;
+  bottom: 5px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  right: 34px;
+  display: flex;
+  justify-content: space-between;
+  width: 7%;
+}
+
+.whatsapp {
+  max-width: 100%;
+  position: fixed;
+  z-index: 994449;
+  bottom: 5px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  right: 85px;
+}
+
+.phone {
+  max-width: 100%;
+  position: fixed;
+  z-index: 994449;
+  bottom: 5px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  right: 85px;
+}
+
+.tilak-image-container {
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
+
+.main-container h2 {
+  font-family: "El Messiri", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.2;
+  align-items: center;
+  text-align: center;
+  color: #febe11;
+}
+
+.puja-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+
+.pooja-outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.puja {
+  margin-bottom: 20px;
+  height: auto;
+  width: 395px;
+  border: 0.93px solid rgba(184, 165, 98, 1);
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(48 17 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.puja h3 {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  padding: 1em 0;
+  margin-bottom: 1px;
+}
+
+.puja a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #fff;
+}
+
+.puja p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.puja-img-container {
+  object-fit: cover;
+  width: 17rem;
+  height: auto;
+  border-radius: 45px;
+}
+
+.puja-img {
+  border-radius: inherit;
+  height: 33vh;
+}
+
+.book-button {
+  background-color: rgba(147, 53, 7, 1);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  align-items: center;
+  text-align: center;
+  padding: 0.3rem 2rem;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 9.29px;
+}
+
+.testimonial-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.testimonial-slide {
+  height: 50vh;
+  text-align: center;
+  display: none;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  background: rgb(99 0 2);
+  flex-direction: column;
+}
+
+.testimonial-carousel:hover .testimonial-slide {
+  transform: scale(1.02);
+}
+
+.client-image {
+  margin-top: 10px;
+  width: 169px;
+  height: 165px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.92);
+}
+
+.client-review,
+.client-name {
+  font-family: "Inter";
+  line-height: 22px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.testimonial-carousel {
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonial-carousel:hover .testimonial-slide {
+  transform: scale(1.02);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active {
+  background-color: #956148;
+}
+
+.navbar-links li:hover {
+  background-color: #790e0e;
+}
+
+.footer {
+  background: #630002;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 12%;
+}
+
+.terms {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(184, 165, 98, 1);
+  text-decoration: none;
+  margin-top: 0.5em;
+}
+
+.phone-image {
+  width: 21px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.mail-image {
+  position: relative;
+  width: 28px;
+  height: 22px;
+  margin-right: 10px;
+  top: 7px;
+}
+
+.social-media-icon {
+  width: 30px;
+}
+
+.facebook-icon {
+  margin-bottom: 2px;
+  width: 40px;
+}
+
+.twitter-icon {
+  width: 40px;
+}
+.instagram-icon {
+  margin-bottom: 5px;
+  width: 28px;
+}
+
+.Youtube-icon {
+  width: 40px;
+}
+
+.facebook-icon,
+.twitter-icon,
+.Youtube-icon {
+  margin: 0 5px;
+}
+
+.vivanet img {
+  height: 7vh;
+}
+
+.additional-footer {
+  background: #630002;
+}
+
+.footer-copyright {
+  text-align: center !important;
+  color: #b8a562;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.know-more-link {
+  color: #fff;
+}
+
+.price {
+  font-size: 1.2em;
+  color: #fff;
+  margin: 10px 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.pooja-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.puja-outer-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.puja-outer-box h1 {
+  text-align: center;
+  color: rgba(147, 53, 7, 1);
+}
+
+.pooja-image {
+  flex: 1;
+  max-width: 40%;
+  margin-right: 20px;
+  margin-top: 1.5%;
+}
+
+.pooja-image img {
+  width: 33em;
+  height: auto;
+  border-radius: 5px;
+}
+
+.pooja-content {
+  flex: 2;
+}
+
+.pooja-content h1,
+.pooja-content h2 {
+  color: rgba(147, 53, 7, 1);
+}
+
+.pooja-content p {
+  margin-bottom: 20px;
+  font-family: "Inter";
+  font-size: medium;
+  text-align: justify;
+}
+
+.benefits-list {
+  margin-bottom: 30px;
+  font-family: "Inter";
+  font-size: medium;
+  text-align: justify;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+}
+
+.book-button-container {
+  text-align: center;
+}
+
+.book-button-pooja {
+  background-color: rgba(147, 53, 7, 1);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  padding: 4px 1rem;
+  justify-content: center;
+}
+
+.price1 {
+  margin-bottom: 10px;
+}
+
+.price1 {
+  color: rgba(147, 53, 7, 1);
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  padding: 4px 1rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1366px) {
+  .puja {
+    padding: 13px 0;
+  }
+
+  .testimonial-slide {
+    height: 56vh;
+  }
+
+  div.pooja-image {
+    flex: 1;
+    max-width: fit-content !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .testimonial-slide {
+    height: 67vh;
+    width: 47%;
+  }
+
+  .puja {
+    width: 298px;
+    padding: 13px 0;
+  }
+  
+  div.pooja-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .puja-img-container {
+    width: 14rem;
+  }
+
+  div.pooja-image {
+    margin-right: 0;
+  }
+
+  div.pooja-image img {
+    width: 100%;
+  }
+  
+
+  .footer-copyright {
+    padding-top: 1em;
+  }
+
+  .footer-logo {
+    width: 12%;
+    height: 15vh;
+  }
+  .dots-container {
+    margin: 1em;
+  }
+  .terms {
+    font-family: "Inter";
+    font-size: 16px;
+  }
+
+  .fixed-icons {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .ribbon {
+    font-size: 12px;
+  }
+  .banner {
+    padding: 0;
+    height: 40vh;
+  }
+
+  .banner-text {
+    font-size: x-large;
+  }
+  .banner-text-sub {
+    font-size: medium;
+  }
+
+  .puja-img-container {
+    width: 18rem;
+  }
+
+  .pooja-outer-container {
+    margin-bottom: 3em;
+  }
+
+  .puja-types {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .puja {
+    width: 412px;
+    padding: 13px 0;
+  }
+
+  .testimonial-slide {
+    height: 75vh;
+  }
+
+  .terms {
+    font-size: 18px;
+    margin-top: 1.5em;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo {
+    width: 16%;
+    height: 15vh;
+  }
+
+  .fixed-icons {
+    width: 13%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ribbon{
+    display: flex;
+    justify-content: space-between;
+}
+
+  .banner-text-container {
+    transform: translate(1em, 2em);
+}
+  .banner-text {
+    font-size: small;
+  }
+  .banner-text-sub {
+    font-size: xx-small;
+  }
+  .container {
+    margin: 0 1em;
+    height: 12vh;
+  }
+
+  .logo img {
+    height: 10vh;
+  }
+
+  .book-pooja-button {
+    padding: 0.6em 0.5em;
+  }
+
+  .book-pooja-button a {
+    font-size: smaller;
+  }
+
+  .banner {
+    height: 40vh;
+  }
+
+  .tilak-image {
+    width: 45%;
+  }
+
+  .puja {
+    width: 375px;
+    padding: 13px 0;
+  }
+
+  .pooja-outer-container {
+    align-items: center;
+  }
+
+  .puja h3,
+  .terms,
+  .client-name {
+    font-size: 18px;
+  }
+
+  .client-review {
+    font-size: 15px;
+  }
+
+  .book-button {
+    font-size: 20px;
+  }
+
+  .main-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .puja-img {
+    border-radius: inherit;
+    height: 24vh;
+  }
+
+  .testimonial-carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-slide {
+    width: 85%;
+    height: 53vh;
+  }
+
+  .client-review,
+  .client-name {
+    padding: 0 1em;
+  }
+
+  .fixed-icons {
+    flex-direction: column;
+    right: 8px;
+  }
+
+  .footer-logo {
+    width: 22%;
+    height: 8vh;
+  }
+
+  div.pooja-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.pooja-image {
+    flex: 1;
+    max-width: 40%;
+    margin-right: 0;
+  }
+  div.pooja-image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .banner-text {
+    top: 30%;
+  }
+
+  .banner-text-sub {
+    font-size: xx-small;
+  }
+  .ribbon {
+    font-size: 9px;
+  }
+
+  .banner {
+    height: 46vh;
+  }
+
+  .banner {
+    height: 25vh;
+  }
+
+  .puja-img-container {
+    width: 12rem;
+  }
+
+  .puja {
+    width: 245px;
+    padding: 13px 0;
+  }
+
+  .puja-img {
+    border-radius: inherit;
+    height: 24vh;
+  }
+
+  .main-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .puja h3,
+  .terms,
+  .client-name {
+    font-size: 15px;
+  }
+
+  .client-review {
+    font-size: 12px;
+  }
+
+  .puja-img-container {
+    height: auto;
+  }
+
+  .book-button {
+    font-size: 17px;
+  }
+
+  .testimonial-slide {
+    width: 90%;
+  }
+
+  .client-image {
+    margin-top: 10px;
+    width: 110px;
+    height: 111px;
+  }
+}
+
+@media screen and (width: 769px) and (height: 1024px) {
+  .testimonial-slide {
+    height: 36vh;
+  }
+
+  .footer-logo {
+    width: 30%;
+  }
+
+  .puja-img {
+    border-radius: inherit;
+    height: 21vh;
+  }
+}
+
+@media all and (device-width: 853px) and (device-height: 1280px) {
+  .container {
+    height: 10vh;
+  }
+  .puja-img {
+    border-radius: inherit;
+    height: 14vh;
+  }
+  .logo img {
+    width: auto;
+    height: 10vh;
+  }
+
+  .banner {
+    height: 32vh;
+  }
+
+  .banner-text {
+    font-size: x-large;
+  }
+  .banner-text-sub {
+    font-size: medium;
+  }
+
+  .testimonial-slide {
+    height: 29vh;
+  }
+
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 12%;
+    height: 7vh;
+  }
+}
+
+@media all and (device-width: 1024px) and (device-height: 1366px) {
+  .container {
+    height: 10vh;
+  }
+  .logo img {
+    width: auto;
+    height: 9vh;
+  }
+
+  .banner {
+    height: 36vh;
+  }
+
+  .banner-text {
+    font-size: x-large;
+  }
+  .banner-text-sub {
+    font-size: medium;
+  }
+
+  .testimonial-slide {
+    height: 24vh;
+    width: 47%;
+  }
+
+  .puja-img {
+    border-radius: inherit;
+    height: 15vh;
+  }
+
+  .footer-logo {
+    width: 12%;
+    height: 7vh;
+  }
+
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-height: 1180px) and (max-height: 1368px) {
+  .container {
+    height: 10vh;
+  }
+
+  .logo img {
+    width: auto;
+    height: 9vh;
+  }
+  .testimonial-slide {
+    height: 31vh;
+  }
+
+  .footer-logo {
+    width: 16%;
+    height: 9vh;
+  }
+
+  .puja-img {
+    border-radius: inherit;
+    height: 18vh;
+  }
+
+}
+
+@media screen and (min-height: 835px) and (max-height: 925px) {
+  .testimonial-slide {
+    height: 47vh;
+  }
+
+  .puja-img {
+    border-radius: inherit;
+    height: 18vh;
+  }
+}
+
+@media screen and (min-height: 700px) and (max-height: 800px) {
+  .testimonial-slide {
+    height: 47vh;
+  }
+}
+
+@media all and (device-width: 430px) and (device-height: 932px) {
+  .ribbon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+}
+
+}
+
+@media all and (device-width: 390px) and (device-height: 844px) {
+  .ribbon {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+  }
+}

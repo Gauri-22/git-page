@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantra Sankalp</title>
+    <link rel="stylesheet" href="css/style.css">
+ 
+    <script type="text/javascript" src="translate.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+ 
+<body>
+    <div id="loader"><i class="fas fa-spinner fa-spin"></i></div>
+    <div id="language-modal" class="modal">
+        <div class="modal-content">
+            <h2>Select Your Language</h2>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="mr">Marathi</option>
+            </select>
+            <button onclick="setLanguage()">Submit</button>
+        </div>
+    </div>
+    <div>
+        <div class="ribbon">
+            <div>सूर्य ग्रहण: 8 एप्रिल, सोमवार 2024 | चंद्र ग्रहण: 18 सप्टेंबर, बुधवार 2024 |</div>
+            <button class="language-button" onclick="openLanguageModal()">Change Language</button>
+        </div>
+        <div id="nav-placeholder"></div>
+        <div class="banner">
+            <div class="banner-text-container">
+                <h1 class="banner-text">At Your Service</h1>
+                <h1 class="banner-text-sub">May this puja bring blessings, peace, and harmony into your life.</h1>
+            </div>
+        </div>
+        <main>
+            <section class="main-container">
+                <div class="tilak-image-container">
+                    <img class="tilak-image" src="images/tilak-icon.png" alt="elementor image">
+                </div>
+                <h2>Book Your Puja</h2>
+                <div class="puja-types">
+                    <div class="pooja-outer-container">
+                        <div class="puja">
+                            <div class="puja-img-container">
+                                <img src="images/image1.jpg" width="100%" class="puja-img" alt="Puja type 1 image">
+                            </div>
+                            <h3>Vastu Shanti Puja <br>Regular Puja </h3>
+                            <a href="vastuPooja.html" class="know-more-link">Know More</a>
+                        <div class="price">3300 /-</div>
+                        </div>
+                        <a href="https://wa.me/+919022010436?text=Hey,%20I%20am%20interested%20in%20availing%20a%20Puja%20Service."
+                            target="_blank" class="book-button">Book Now</a>
+                    </div>
+                    <div class="pooja-outer-container">
+                        <div class="puja">
+                            <div class="puja-img-container">
+                                <img src="images/image2.jpg" width="100%" class="puja-img" alt="Puja type 2 image">
+                            </div>
+                            <h3>Satyanarayan Puja<br>Regular Puja </h3>
+                            <a href="satyanarayanPooja.html" class="know-more-link">Know More</a>
+                        <div class="price">1100 /-</div>
+                        </div>
+                        <a href="https://wa.me/+919022010436?text=Hey,%20I%20am%20interested%20in%20availing%20a%20Puja%20Service."
+                            target="_blank" class="book-button">Book Now</a>
+                    </div>
+                    <div class="pooja-outer-container">
+                        <div class="puja">
+                            <div class="puja-img-container">
+                                <img src="images/image3.jpg" width="100%" height="33vh" class="puja-img"
+                                    alt="Puja type 3 image">
+                            </div>
+                            <h3>Other<br>Pujas </h3>
+                            <a href="" class="know-more-link">Know More</a>
+                            <div class="price" style="padding: 10px;"></div>
+                        </div>
+                        <a href="https://wa.me/+919022010436?text=Hey,%20I%20am%20interested%20in%20availing%20a%20Puja%20Service."
+                            target="_blank" class="book-button">Book Now</a>
+                    </div>
+                </div>
+            </section>
+            <div class="main-container">
+                <div class="tilak-image-container">
+                    <img class="tilak-image" src="images/tilak-icon.png" alt="elementor image">
+                </div>
+                <h2>Client Testimonials</h2>
+            </div>
+            <div class="testimonial-carousel testimonial-slider">
+                <div class="testimonial-slide">
+                    <img src="images/testimonial5.jpg" alt="Image Description" class="client-image">
+                    <div>
+                        <h3 class="client-name">Aditya Verma - Pune</h3>
+                        <p class="client-review">"Excellent Satyanarayan Puja arrangements by Mantra Sankalp. Very well
+                            coordinated and organized at reasonable rates. Pandit was simply Awesome. He explained each
+                            and every steps. Thank you so much."</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="images/testimonial1.jpg" alt="Image Description" class="client-image">
+                    <div>
+                        <h3 class="client-name">Priya Sharma - Pune</h3>
+                        <p class="client-review">"I recently used Mantra Sankalp to book a puja for Vastu Shanti Puja,
+                            and I
+                            must say, their service was exceptional. performed the puja beautifully. I highly recommend
+                            Mantra Sankalp for all your religious service needs!"</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="images/malve.jpg" alt="Image Description" class="client-image">
+                    <div>
+                        <h3 class="client-name">Nandita Ghosh - Pune</h3>
+                        <p class="client-review">"I thoroughly enjoyed the puja booking process with Mantra Sankalp.
+                            There was
+                            no stress, and everything was planned out. The puja proceeded and concluded as planned.
+                            Every rite was carried out exactly as it should have been"</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="images/testimonial3.jpg" alt="Image Description" class="client-image">
+                    <div>
+                        <h3 class="client-name">Diya Mehta- Pune</h3>
+                        <p class="client-review">"Jay shree krishna Thank you Mantra Sankalp for conducting all
+                            Satyanarayan
+                            Puja and ceremonies as per Hindu ritual. Best platform to Book A Pooja Online"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dots-container">
+            </div>
+        </main>
+        <div id="footer-placeholder"></div>
+    </div>
+ 
+    <script>
+        
+        const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+        let currentTestimonialIndex = 0;
+        const dotsContainer = document.querySelector('.dots-container');
+ 
+        function showTestimonial(index) {
+            const slidesToShow = window.innerWidth >= 769 ? 2 : 1;
+            testimonialSlides.forEach((slide, i) => {
+                if (i >= index && i < index + slidesToShow) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+            updateDots(index, slidesToShow);
+        }
+ 
+        function updateDots(index, slidesToShow) {
+            dotsContainer.innerHTML = '';
+            const totalDots = Math.ceil(testimonialSlides.length / slidesToShow);
+            for (let i = 0; i < totalDots; i++) {
+                const dot = document.createElement('span');
+                dot.classList.add('dot');
+                if (i === Math.floor(index / slidesToShow)) {
+                    dot.classList.add('active');
+                }
+                dot.addEventListener('click', () => {
+                    showTestimonial(i * slidesToShow);
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+ 
+        function autoPlay() {
+            const slidesToShow = window.innerWidth >= 769 ? 2 : 1;
+            currentTestimonialIndex += slidesToShow;
+            if (currentTestimonialIndex >= testimonialSlides.length) {
+                currentTestimonialIndex = 0;
+            }
+            showTestimonial(currentTestimonialIndex);
+        }
+ 
+        showTestimonial(currentTestimonialIndex);
+        let intervalId = setInterval(autoPlay, 3000);
+ 
+        window.addEventListener('resize', () => {
+            clearInterval(intervalId);
+            showTestimonial(currentTestimonialIndex);
+            intervalId = setInterval(autoPlay, 3000);
+        });
+    </script>
+ 
+    <script>
+        function loadHTML(file, elementId) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.log('Error loading HTML:', error));
+        }
+ 
+        loadHTML('common/nav.html', 'nav-placeholder');
+        loadHTML('common/footer.html', 'footer-placeholder');
+    </script>
+
+</body>
+ 
+</html>

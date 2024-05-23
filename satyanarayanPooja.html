@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyanarayan Puja</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="translate.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div id="loader"><i class="fas fa-spinner fa-spin"></i></div>
+    <div>
+        <div class="ribbon">सूर्य ग्रहण: 8 एप्रिल, सोमवार 2024 | चंद्र ग्रहण: 18 सप्टेंबर, बुधवार 2024 | </div>
+        <div id="nav-placeholder"></div>
+        <main>
+            <div class="puja-outer-box">
+            <h1>Satyanarayan Puja</h1>
+            <div class="pooja-container">
+                <div class="pooja-image">
+                    <img src="images/satyanarayan.jpg" alt="Vastu Shanti Puja Image">
+                </div>
+                <div class="pooja-content">
+                    <p>Satyanarayan Puja is a Hindu religious ceremony dedicated to Lord Vishnu, particularly in his
+                        form as
+                        Satyanarayan, which translates to "the embodiment of truth." This puja holds significant
+                        importance
+                        in Hindu culture and is often performed to seek the blessings of Lord Vishnu for prosperity,
+                        well-being, and happiness in the family.</p>
+
+                    <h2>Common Benefits of Satyanarayan Puja:</h2>
+                    <ol class="benefits-list">
+                        <li>Blessings of Lord Vishnu</li>
+                        <li>Fulfillment of Desires</li>
+                        <li>Removal of Obstacles</li>
+                        <li>Family Harmony and Unity</li>
+                        <li>Prosperity and Wealth</li>
+                        <li>Positive Energy and Peace of Mind</li>
+                    </ol>
+
+                    <p>Overall, the Satyanarayan Puja is considered to be auspicious and beneficial for devotees seeking
+                        divine blessings, fulfillment of desires, and spiritual upliftment.</p>
+                </div>
+                </div>
+            </div>
+            <div class="book-button-container">
+                <div class="price1">Price: 1100 /-</div>
+                <a href="https://wa.me/+919022010436?text=Hey,%20I%20am%20interested%20in%20availing%20a%20Puja%20Service."
+                    class="book-button-pooja" target="_blank">Book Now</a>
+            </div>
+        </main>
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        // Load HTML for Navigation and Footer
+        function loadHTML(file, elementId) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.log('Error loading HTML:', error));
+        }
+        loadHTML('common/nav.html', 'nav-placeholder');
+        loadHTML('common/footer.html', 'footer-placeholder');
+
+    </script>
+</body>
+
+</html>
